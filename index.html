@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arjun | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f0f0f,#1a1a2e,#16213e);
+color:#fff;
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h3{
+color:#00f5ff;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#00f5ff;
+}
+
+section{
+padding:110px 8%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+font-weight:700;
+}
+
+.hero span{
+color:#00f5ff;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#ccc;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 30px;
+background:#00f5ff;
+color:#000;
+border:none;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#fff;
+}
+
+.section-title{
+font-size:30px;
+margin-bottom:40px;
+border-left:4px solid #00f5ff;
+padding-left:15px;
+}
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:15px;
+border:1px solid rgba(255,255,255,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#00f5ff;
+}
+
+ul{
+margin-top:10px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th, td{
+border:1px solid rgba(255,255,255,0.2);
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#00f5ff;
+color:black;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h3>Arjun</h3>
+<div>
+<a href="#profile">Profile</a>
+<a href="#academic">Academic</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#internship">Internship</a>
+<a href="#achievements">Achievements</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Hi, I'm <span>Arjun</span></h1>
+<p>Full Stack Developer | AI Enthusiast | EV Innovator</p>
+<a href="#projects" class="btn">Explore My Work</a>
+</section>
+
+<!-- PROFILE -->
+<section id="profile">
+<h2 class="section-title">Student Profile</h2>
+<div class="card-container">
+<div class="card">
+<p><strong>Name:</strong> Arjun</p>
+<p><strong>Roll Number:</strong> RA2411003050199</p>
+<p><strong>Email:</strong> paarjun2006@gmail.com</p>
+</div>
+<div class="card">
+<h3>Skills</h3>
+<ul>
+<li>Full Stack Development</li>
+<li>Python Programming</li>
+<li>AI Tools Management</li>
+<li>UI/UX Design</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- ACADEMIC -->
+<section id="academic">
+<h2 class="section-title">Academic Details</h2>
+
+<p><strong>CGPA:</strong> 8.6</p>
+
+<h3 style="margin-top:20px;">Courses Completed</h3>
+<ul>
+<li>Programming for Problem Solving</li>
+<li>Object Oriented Design and Programming</li>
+<li>Computer Organisation and Architecture</li>
+<li>Data Structure Algorithm</li>
+<li>Advanced Programming Practice</li>
+<li>Design and Analysis of Algorithms</li>
+<li>Database Management System</li>
+<li>Artificial Intelligence</li>
+<li>Internet of Things</li>
+</ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Venture Link</h3>
+<p>A full stack software platform connecting entrepreneurs with angel investors, mentors, students and professionals to build an innovation-driven community.</p>
+<p><strong>Tools:</strong> Full Stack Development (Multiple Languages)</p>
+</div>
+
+<div class="card">
+<h3>Dual Battery Management EV Bike</h3>
+<p>EV system that switches between dual batteries automatically to improve range and efficiency.</p>
+<p><strong>Tools:</strong> Arduino Uno, LCD, Relay Modules, ACS712 Sensors, Li-ion Batteries, Buzzer, Wireless Module</p>
+</div>
+
+<div class="card">
+<h3>EV Emergency Solar Backup</h3>
+<p>Solar panel integrated in EV footrest that expands during parking and charges battery for emergency use.</p>
+<p><strong>Tools:</strong> Solar Panel, DC Motor, Arduino, Rechargeable Battery</p>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+<h2 class="section-title">Certifications</h2>
+
+<div class="card">
+<p>Differential Equations for Engineers – Coursera</p>
+<p>Introduction to Visual Basic Programming – Coursera</p>
+<p>Java Programming for Beginners – Coursera</p>
+<p>Artificial Intelligence – Coursera</p>
+<p>Multiple MongoDB Certifications – MongoDB</p>
+</div>
+
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship">
+<h2 class="section-title">Internship</h2>
+
+<div class="card">
+<p><strong>Company:</strong> Vdart</p>
+<p><strong>Duration:</strong> 30 Days</p>
+<p><strong>Role:</strong> Full Stack Development</p>
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+<h2 class="section-title">Achievements</h2>
+
+<div class="card">
+<ul>
+<li>Participated in Hesin Hackathon – SRM KTR</li>
+<li>Participated in Ideathon – SRM Trichy</li>
+</ul>
+</div>
+
+</section>
+
+</body>
+</html>
